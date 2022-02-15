@@ -1,0 +1,18 @@
+// ========== show hidden input ========
+const showHiddenInput = (inputOverlay, inputPass, inputIcon) => {
+  const overlay = document.getElementById(inputOverlay);
+
+  const input = document.getElementById(inputPass);
+
+  const iconEye = document.getElementById(inputIcon);
+
+  iconEye.addEventListner("click", () => {
+    // change password to text
+    if (input.type === "password") {
+      //switch to text
+      input.type = "text";
+    }
+  });
+};
+
+showHiddenInput("input-overlay", "input-password", "input-icon");

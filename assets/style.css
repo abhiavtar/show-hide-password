@@ -44,7 +44,34 @@ body {
 
 .input-lock,
 .input-password {
-  color: white;
+  color: var(--white-color);
+}
+
+.input-icon {
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.input-password {
+  background: transparent;
+  border: none;
+  outline: none;
+  z-index: 1;
+}
+
+.input-password::placeholder {
+  color: var(--white-color);
+}
+
+.input-overlay {
+  width: 32px;
+  height: 32px;
+  background-color: var(--white-color);
+  position: absolute;
+  right: 0.9rem;
+  border-radius: 50%;
+  z-index: 0;
+  transition: 0.4s ease-in-out;
 }
 
 /* transition effect  */
