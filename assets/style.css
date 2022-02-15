@@ -1,0 +1,50 @@
+/* ===================GOOGOLE FONTS==================  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* =======================Variable Css==================  */
+
+:root {
+  /* ============= Colors ===========  */
+  --first-color: hsl(232, 54%, 43%);
+  --text-color: hsl(232, 8%, 35%);
+  --white-color: hsl(232, 100%, 99%);
+  --body-color: hsl(232, 45%, 90%);
+  --container-color: hsl(232, 54%, 11%);
+}
+
+/* =============== INPUT PASSWORD =====================  */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--body-color);
+}
+
+.input {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.35rem 1.25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
+.input-lock,
+.input-icon {
+  font-size: 1.25rem;
+  z-index: 1;
+}
+
+.input-lock,
+.input-password {
+  color: white;
+}
+
+/* transition effect  */
