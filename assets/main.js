@@ -11,7 +11,18 @@ const showHiddenInput = (inputOverlay, inputPass, inputIcon) => {
     if (input.type === "password") {
       //switch to text
       input.type = "text";
+
+      // change icon
+      iconEye.classList.add("bx-show");
+    } else {
+      // change to password
+      input.type = "password";
+
+      // remove icon
+      iconEye.classList.remove("bx-show");
     }
+
+    overlay.classList.toggle("overlay-content");
   });
 };
 
