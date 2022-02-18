@@ -6,7 +6,7 @@ const showHiddenInput = (inputOverlay, inputPass, inputIcon) => {
 
   const iconEye = document.getElementById(inputIcon);
 
-  iconEye.addEventListner("click", () => {
+  iconEye.addEventListener("click", () => {
     // change password to text
     if (input.type === "password") {
       //switch to text
